@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicio 2 </h1>
+    </header>
+
+    <div class="question">
+        <h2>1. Que son los arrays , definicion ejemplo de cada tipo de dato (incluyendo indices)</h2>
+        <p>Es una estructura de datos que permite almacenar varios valores de diferente tipo ordenadas con un indice que
+            incia en 0, este se utiliza para llamar a cada elemetno.</p>
+        <p>const frutas = ['Manzana', 'Banana', 'Naranja']; <br>
+            <b>Para llamar al primer elemento 'Manzana: </b><br>
+            console.log(frutas[0]);
+        </p>
+
+    </div>
+
+    <div class="question">
+        <h2>2. Que tipos de datos podemos agregar en los arrays(con ejemplos)</h2>
+        <p>Se pueden agregar diferentes tipos de datos, como string, number, boolean, otros arreglos, funciones, objetos
+        </p>
+        <p><b>Tipos de datos</b> <br>
+            const arrayname = ['Priscila', 'Ricardo', 'Andre'] <br>
+            const arraynumber = [12, 45, 96] <br>
+            const arraymix = [0; 'Hola', { nombre:'Juan'}, ['a,'b,'c']] <br></p>
+    </div>
+
+    <div class="question">
+        <h2>3. Explicar los metodos o metodo enseniado en clase para los arreglos(definicion y ejemplo)</h2>
+        <p>.length en un string devuelve la cantidad de caracteres <br>
+            .length en un arreglo devuelve la cantidad de elementos <br></p>
+        
+    </div>
+
+    <div class="question">
+        <h2>4. Como acceder a cada elemento del arreglo(definicion y ejemplo)</h2>
+        <p>Se puede puede acceder a cada elemento del arreglo mediante su indice.</p>
+        <p>const arrayvocales=['a','e','i','o','u'] <br>
+            <b>Para llamar a la letra 'i' que tiene el indice 2: </b> <br>
+            console.log(arrayvocales[2]);
+        </p>
+    </div>
+
+    <div class="question">
+        <h2>5. Que son los arreglos bidimensionales( definicion y ejemplo)</h2>
+        <p>Un arreglo bidimensional es un arreglo que contiene otros arreglos como elementos. </p>
+        <p>const biarray = [ [1, 2, 3],[4, 5, 6],[7, 8, 9] ];</p>
+    </div>
+
+    <div class="question">
+        <h2>6. Como iterar los arreglos , de manera imperativa(for) y de manera declarativa (map y forEach)</h2>
+        <p>const numeros = [1, 2, 3];</p>
+        <p><b>Imperativo</b> <br>
+            for (let i = 0; i < numeros.length; i++) { <br>
+                console.log(numeros[i]); <br>
+                }</p>
+        <p><b>Declarativa</b> <br></p>
+        <p>forEach: <br>
+            numeros.forEach(function(numero) { <br>
+            console.log(numero); <br>
+            });</p>
+        <p> Map: <br>
+            const duplicados = numeros.map(function(numero) { <br>
+            return numero * 2; <br>
+            });<br>
+            console.log(duplicados);</p>
+
+    </div>
+
+    <div class="question">
+        <h2>7. Diferencias con ejemplos de map y forEach</h2>
+        <p>Map devuelve un nuevo arreglo con los resultados de la iteración, forEach ejecuta la función en cada elemento
+            del arreglo sin crear un nuevo arreglo.</p>
+
+    </div>
+
+    <div class="question">
+        <h2>8. Crear un array de numeros(minimo de 5 elementos) y devolver el promedio.</h2>
+        <p>let numeros = [10, 20, 30, 40, 50]; <br>
+            let suma=0; <br>
+
+            for (let i = 0; i < numeros.length; i++) { <br>
+                suma = suma + numeros[i]; <br>
+                } <br>
+                let promedio = suma/numeros.length; <br>
+                console.log(promedio);</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
